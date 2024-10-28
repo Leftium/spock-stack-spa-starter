@@ -5688,9 +5688,11 @@ namespace forms {
 		 * If you want to submit the form as part of a transaction,
 		 * you can change the default Dao via [SetDao()].
 		 */
-		(app: core.App, collection: models.Collection, optAuthRecord: models.Record):
-			| RecordOAuth2Login
-			| undefined
+		(
+			app: core.App,
+			collection: models.Collection,
+			optAuthRecord: models.Record
+		): RecordOAuth2Login | undefined
 	}
 	interface RecordOAuth2Login {
 		/**
