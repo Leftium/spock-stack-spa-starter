@@ -1,12 +1,8 @@
 {
 	"arrowParens": "always",
-	"bracketSameLine": false,
-	"embeddedLanguageFormatting": "auto",
-	"htmlWhitespaceSensitivity": "css",
 	"printWidth": 100,
 	"semi": false,
 	"singleQuote": true,
 	"trailingComma": "es5",
-	"useTabs": true,
-	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
+	"useTabs": true
 }
