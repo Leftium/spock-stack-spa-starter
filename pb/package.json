@@ -1,0 +1,17 @@
+{
+	"name": "pb-hooks-starter",
+	"version": "0.0.1",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsup ./src/entries/*.ts -d ../deploy/pb_hooks",
+		"watch": "chokidar ./src/entries/** -c \"pnpm build\" --initial",
+		"dev": "pocketbase serve --hooksDir=../deploy/pb_hooks --publicDir=../deploy/pb_public"
+	},
+	"dependencies": {
+		"@swc/core": "^1.7.40",
+		"chokidar-cli": "^3.0.0",
+		"tsup": "^8.3.5",
+		"typescript": "^5.6.3"
+	}
+}
